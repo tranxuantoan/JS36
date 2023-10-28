@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ACTECH LAND - Công ty Bất Động Sản tại Đà Nẵng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="MenuVanHoa.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-image: url(/Images/bg2.jpg); background-repeat: repeat;">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openSearch() { /*Hành động mở Layout Tìm kiếm*/
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() { /*Hành động tắt Layout Tìm kiếm*/
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <header>
+        <div class="HeaderMenu"> <!--Div tổng của Header-->
+            <div class="MenuBar"> <!--Div của riêng thanh Menu-->
+                <a href="Index.html#"><img class="LogoHeader" src="/Images/transparent-logo.png"></a>
+                <!--Logo bên phải-->
+                <a href="MenuGioiThieuChung.html" style="color: white; text-decoration: none;"> <!--Các Item của Menu-->
+                    <div class="MenuDropdown">VỀ CHÚNG TÔI <i class="fa fa-angle-down" style="font-size:14px"></i>
+                        <div class="MenuDropdownContent">
+                            <a href="MenuGioiThieuChung.html" class="ItemDropdown" style="text-decoration: none;">Giới
+                                thiệu chung</a>
+                            <hr>
+                            <a href="MenuTamNhin-SuMenh.html" class="ItemDropdown" style="text-decoration: none;">Tầm
+                                nhìn - Sứ mệnh</a>
+                            <hr>
+                            <a href="MenuGiaTriCotLoi.html" class="ItemDropdown" style="text-decoration: none;">Giá trị
+                                cốt lõi</a>
+                            <hr>
+                            <a href="MenuBanLanhDao.html" class="ItemDropdown" style="text-decoration: none;">Ban lãnh
+                                đạo</a>
+                            <hr>
+                            <a href="MenuHeThongChiNhanh.html" class="ItemDropdown" style="text-decoration: none;">Hệ
+                                thống chi nhánh</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="MenuDuAn.html" style="color: white; text-decoration: none;"> <!--Các Item của Menu-->
+                    <div class="MenuDropdown">DỰ ÁN <i class="fa fa-angle-down" style="font-size:14px"></i>
+                        <div class="MenuDropdownContent">
+                            <a href="DuAnCanHo.html" class="ItemDropdown" style="text-decoration: none;">Căn hộ</a>
+                            <hr>
+                            <a href="DuAnNhaPho.html" class="ItemDropdown" style="text-decoration: none;">Nhà phố</a>
+                            <hr>
+                            <a href="DuAnDatNen.html" class="ItemDropdown" style="text-decoration: none;">Đất nền</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="MenuVanHoa.html" class="MenuDropdown" style="color: white; text-decoration: none;">VĂN HÓA</a>
+                <!--Các Item của Menu-->
+                <a href="MenuTintuc.html" style="color: white; text-decoration: none;"><!--Các Item của Menu-->
+<div class="MenuDropdown">TIN TỨC <i class="fa fa-angle-down" style="font-size:14px"></i>
+                        <div class="MenuDropdownContent">
+                            <a href="TinTucTinThiTruong.html" class="ItemDropdown" style="text-decoration: none;">Tin
+                                thị trường</a>
+                            <hr>
+                            <a href="TinTucTinVeActech.html" class="ItemDropdown" style="text-decoration: none;">Tin về
+                                Actect</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="MenuTuyenDung.html" class="MenuDropdown" style="color: white; text-decoration: none;">TUYỂN
+                    DỤNG</a> <!--Các Item của Menu-->
+                <a href="MenuLienHe.html" class="MenuDropdown" style="color: white; text-decoration: none;">LIÊN HỆ</a>
+                <!--Các Item của Menu-->
+            </div>
+
+            <a class="openBtn" onclick="openSearch()" href="#"><i class="material-icons">search</i></a>
+            <!--Icon tìm kiếm/Hành động mở cửa sổ tìm kiếm/Phải thêm thư viện ở dòng 10-->
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+        <div id="myOverlay" class="overlay"> <!--Div tổng của Layout tìm kiếm khi Click vào Icon tìm kiếm-->
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <!--Dấu X tắt cửa sổ tìm kiếm/Hành động tắt cửa sổ tìm kiếm-->
+            <div class="overlay-content"> <!--Div của ô Input và Icon tìm kiếm-->
+                <form>
+                    <input type="text" placeholder="Tìm kiếm..." name="search"> <!--Ô nhập text tìm kiếm-->
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <!--Nút button tìm kiếm bên cạnh thanh text-->
+                </form>
+            </div>
+        </div>
+
+        <section class="section1">
+            <div class="slideshow-container">
+                <div class="mySlides" id="fade">
+                    <a href="#"><img class="imgSlide" src="/Images/hoi-an-golden-sea.jpg" style="width:100%"></a>
+                    <a href="#" class="TitleSlideCenter">Hội An Golden Sea</a>
+                    <a href="#" class="XemThemSlideCenter">Xem thêm +</a>
+                </div>
+                <div class="mySlides" id="fade">
+                    <a href="#"><img class="imgSlide" src="/Images/shophouse-vinh-1-768x302.jpg" style="width:100%"></a>
+                    <a href="#" class="TitleSlideCenter">Vincom Shophouse Vinh</a>
+                    <a href="#" class="XemThemSlideCenter">Xem thêm +</a>
+                </div>
+                <div class="mySlides" id="fade">
+                    <a href="#"><img class="imgSlide" src="/Images/hoa-binh-da-nang-green.jpg" style="width:100%"></a>
+                    <a href="#" class="TitleSlideCenter">Hòa Bình Green Đà Nẵng</a>
+<a href="#" class="XemThemSlideCenter">Xem thêm +</a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="GridSection2">
+                <div class="GridSection2Item1">
+                    <h6 class="Section2Title1">CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN</h6>
+                    <a href="Index.html" class="Section2Title2">
+                        <h4>ACTECH MIỀN TRUNG</h4>
+                    </a>
+                    <div style="margin-top: 20px;">
+                        <p>Actech Miền Trung định hướng xây dựng hệ thống phân phối bất động sản rộng khắp,
+                            trở thành doanh nghiệp kinh doanh và phát triển dự án bất động sản tin cậy,
+                            là lựa chọn hàng đầu cho những nhà đầu tư, cho khách hàng tại Việt Nam và cả trong khu vực.
+                        </p>
+                        <p>Sứ mệnh của chúng tôi là mang lại giá trị tài chính cho nhà đầu tư, mang đến cuộc sống tươi
+                            đẹp cho cộng đồng và động lực làm việc cho nhân viên thông qua việc phát triểndoanh nghiệp
+                            theo hướng đa ngành nghề.</p>
+                    </div>
+                    <a href="MenuGioiThieuChung.html"><button type="button" id="btnSection2"
+                            class="btn btn-outline-warning">TÌM HIỂU THÊM</button></a>
+                </div>
+                <div class="GridSection2Item2"> <!--Animation Map-->
+                    <img width="550" height="400"
+                        src="http://bds41.giaodienwebmau.com/wp-content/uploads/2019/08/investing-in-real-estate.gif"
+                        class="attachment-large size-large" alt="">
+                </div>
+                <div class="GridSection2Icon">
+                    <div class="FlexSection2Icon-Container">
+                        <a href="MenuDuAn.html" style="text-decoration: none;">
+                            <div class="FlexSection2Icon1">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                            xml:space="preserve">
+                                            <rect x="10" y="256" style="fill:#FFC870;" width="106" height="246"></rect>
+                                            <polygon style="fill:#58BFFF;"
+                                                points="396.172,140.12 502,246 502,502 396,502 ">
+                                            </polygon>
+                                            <rect x="84" y="448" style="fill:#7ACCFF;" width="344" height="54"></rect>
+                                            <path style="fill:#A5DDFF;"
+                                                d="M386,64H126c-5.523,0-10,4.477-10,10v374h280V74C396,68.477,391.523,64,386,64z">
+                                            </path>
+                                            <rect x="156" y="10" style="fill:#DFF3FF;" width="200" height="54"></rect>
+                                            <path d="M256.13,20c2.63,0,5.2-1.07,7.07-2.931c1.859-1.859,2.93-4.439,2.93-7.069s-1.07-5.21-2.93-7.07
+                C261.33,1.07,258.76,0,256.13,0s-5.21,1.069-7.07,2.93c-1.87,1.86-2.93,4.44-2.93,7.07s1.06,5.21,2.93,7.069
+                C250.92,18.93,253.5,20,256.13,20z"></path>
+                                            <path
+                                                d="M509.073,238.931L406,135.807V74c0-11.028-8.972-20-20-20h-20V10c0-5.522-4.478-10-10-10h-62.333c-5.522,0-10,4.478-10,10
+                s4.478,10,10,10H346v34H166V20h52.666c5.522,0,10-4.478,10-10s-4.478-10-10-10H156c-5.522,0-10,4.478-10,10v44h-20
+                c-11.028,0-20,8.972-20,20v364H84c-5.522,0-10,4.478-10,10v44H20V266h64c5.522,0,10-4.478,10-10s-4.478-10-10-10H10
+                c-5.522,0-10,4.478-10,10v246c0,5.522,4.478,10,10,10h492c5.522,0,10-4.478,10-10V246C512,243.349,510.947,240.806,509.073,238.931z
+                 M219.333,438v-76h73.334v76H219.333z M292.667,170v76h-73.334v-76H292.667z M219.333,150V74h73.334v76H219.333z M386,342h-73.333
+                v-76H386V342z M386,246h-73.333v-76H386V246z M199.333,246H126v-76h73.333L199.333,246L199.333,246z M126,266h73.333v76H126V266z
+                 M219.333,266h73.334v76h-73.334V266z M312.667,362H386v76h-73.333V362z M386,74v76h-73.333V74H386z M199.333,74v76H126V74H199.333z
+                 M126,362h73.333v76H126V362z M94,492v-34h302h22v34H94z M492,492h-54v-44c0-5.522-4.478-10-10-10h-22v-28.127h31.838
+                c5.522,0,10-4.478,10-10s-4.478-10-10-10H406v-27.958h31.838c5.522,0,10-4.478,10-10s-4.478-10-10-10H406v-27.957h31.838
+                c5.522,0,10-4.478,10-10s-4.478-10-10-10H406V266h31.838c5.522,0,10-4.478,10-10s-4.478-10-10-10H406v-81.901l86,86.042V492z">
+                                            </path>
+                                            <path d="M63,397.67c-2.63,0-5.21,1.06-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07s1.069,5.21,2.93,7.07
+c1.86,1.859,4.44,2.93,7.07,2.93c2.63,0,5.21-1.07,7.069-2.93c1.86-1.86,2.931-4.44,2.931-7.07s-1.07-5.21-2.931-7.07
+                C68.21,398.729,65.63,397.67,63,397.67z"></path>
+                                            <path
+                                                d="M73,298.724c0-5.522-4.478-10-10-10s-10,4.478-10,10V370c0,5.522,4.478,10,10,10s10-4.478,10-10V298.724z">
+                                            </path>
+
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="Section2Number">86</div>
+                                <div class="Section2Text">DỰ ÁN</div>
+                            </div>
+                        </a>
+                        <a href="MenuLienHe.html" style="text-decoration: none;">
+                            <div class="FlexSection2Icon1">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 504.47 504.47" style="enable-background:new 0 0 504.47 504.47;"
+                                            xml:space="preserve">
+                                            <path style="fill:#F4F0D3;" d="M394.189,450.56c21.662,9.452,81.526,36.628,102.794,45.292c2.363,1.182,7.877,0.788,7.089-4.332
+                c-4.726-51.2-33.477-344.615-38.597-396.603c-0.788-7.483-3.151-8.665-8.665-10.634c-16.935-6.302-57.895-20.874-74.831-26.782
+                c-5.908-2.363-9.452-2.363-15.754,0c-26.388,7.483-109.883,33.083-109.883,33.083s-87.04-26.388-114.215-33.871
+                c-5.908-1.969-9.058-2.363-15.754,0.394c-17.329,5.514-57.502,20.48-74.831,26.782c-7.089,2.757-7.877,5.908-8.665,10.634
+                C37.365,145.329,5.857,439.926,0.343,491.52c-0.394,5.908,4.726,5.514,9.452,3.938c23.631-9.452,83.495-35.446,104.763-44.111
+                c4.332-1.969,8.665-3.151,15.754,0c24.025,9.846,94.523,41.748,117.76,51.2c5.12,2.363,9.846,2.757,15.754,0
+                c23.237-9.846,91.372-41.354,114.215-51.594C382.374,448.591,389.069,448.197,394.189,450.56z"></path>
+                                            <path style="fill:#E8E4C8;" d="M137.008,55.532c-3.151-0.394-6.302,0-10.634,1.575c-17.329,5.514-57.502,20.48-74.831,26.782
+                c-7.089,2.757-7.877,5.908-8.665,10.634C37.365,145.329,5.857,439.926,0.343,491.52c-0.394,5.908,4.726,5.514,9.452,3.938
+c23.631-9.452,83.495-35.446,104.763-44.111c3.151-1.182,5.908-2.363,10.24-1.575C124.799,449.772,137.008,55.532,137.008,55.532z
+                 M372.134,55.532c-1.575,0.394-3.151,0.788-5.12,1.575c-26.388,7.877-106.732,32.295-110.277,33.477v413.538
+                 c2.363,0,5.12-0.788,7.877-1.969c23.237-9.846,91.372-41.354,114.215-51.594c1.575-0.788,3.545-1.182,5.514-1.575
+                C384.343,448.985,372.134,55.532,372.134,55.532z"></path>
+                                            <path style="fill:#EFC75E;" d="M184.269,474.585l68.923-68.923l70.105,70.105c14.572-6.695,28.751-13.391,40.172-18.511
+                L111.802,205.982L233.894,83.889c-12.603-3.938-29.145-8.665-44.898-13.391L82.657,176.837L38.94,133.12
+                c-1.575,14.966-3.545,33.083-5.514,53.169l190.622,190.622l-79.951,79.951C155.125,461.588,169.697,467.889,184.269,474.585
+                L184.269,474.585z"></path>
+                                            <path style="fill:#E3BD59;" d="M133.069,184.714l1.969-60.258l-52.382,51.988L38.94,133.12c-1.575,14.966-3.545,33.083-5.514,53.169
+                l96.886,96.886l1.575-57.108l-19.692-19.692L133.069,184.714z M256.343,409.206l66.56,66.56
+                c14.572-6.695,28.751-13.391,40.172-18.511L256.343,350.523V409.206z"></path>
+                                            <path style="fill:#E2574C;" d="M315.42,0c63.015,0,114.215,51.2,114.215,114.609c0,1.182-0.394,30.72-10.24,51.594
+                c-23.237,53.957-79.163,111.065-97.674,129.575c-4.726,4.332-6.695,5.12-12.603-0.394c-18.905-18.511-74.043-74.831-97.28-128.394
+                c-8.271-15.754-10.634-49.625-10.634-52.382C201.205,51.2,252.405,0,315.42,0z"></path>
+                                            <path style="fill:#FFFFFF;" d="M315.42,55.138c-32.689,0-59.077,26.388-59.077,59.077s26.388,59.077,59.077,59.077
+                s59.077-26.388,59.077-59.077S348.109,55.138,315.42,55.138z M315.42,149.662c-19.692,0-35.446-15.754-35.446-35.446
+                S295.728,78.77,315.42,78.77s35.446,15.754,35.446,35.446S335.112,149.662,315.42,149.662z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="Section2Number">3</div>
+                                <div class="Section2Text">HỆ THỐNG CHI NHÁNH</div>
+                            </div>
+                        </a>
+                        <a href="MenuVanHoa.html" style="text-decoration: none;">
+                            <div class="FlexSection2Icon1">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 480.013 480.013"
+                                            style="enable-background:new 0 0 480.013 480.013;" xml:space="preserve">
+                                            <g>
+                                                <path style="fill:#DFB28B;"
+                                                    d="M215.55,377.81c7.781-7.249,19.842-7.249,27.624,0l32.232,30.6
+                    c7.242,6.727,7.659,18.05,0.932,25.292c-0.299,0.322-0.61,0.633-0.932,0.932c-7.785,7.241-19.839,7.241-27.624,0l-0.8-0.752
+                    l-31.432-29.816c-7.25-6.717-7.683-18.04-0.966-25.29C214.894,378.441,215.216,378.119,215.55,377.81L215.55,377.81z"></path>
+                                                <path style="fill:#DFB28B;" d="M298.398,299.13c7.781-7.249,19.842-7.249,27.624,0l32.232,30.592
+                    c7.244,6.731,7.66,18.059,0.929,25.303c-0.298,0.321-0.608,0.631-0.929,0.929c-7.785,7.241-19.839,7.241-27.624,0l-32.232-30.6
+                    c-7.242-6.727-7.659-18.05-0.932-25.292C297.765,299.74,298.076,299.429,298.398,299.13z"></path>
+                                                <path style="fill:#DFB28B;" d="M270.798,325.354c7.785-7.241,19.839-7.241,27.624,0l32.232,30.6
+                    c7.242,6.727,7.659,18.05,0.932,25.292c-0.299,0.322-0.61,0.633-0.932,0.932c-7.785,7.241-19.839,7.241-27.624,0l-32.232-30.6
+                    c-7.242-6.727-7.659-18.05-0.932-25.292C270.165,325.964,270.476,325.653,270.798,325.354z"></path>
+                                                <path style="fill:#DFB28B;" d="M243.198,351.578c7.785-7.241,19.839-7.241,27.624,0l32.232,30.6
+                    c7.244,6.731,7.66,18.059,0.929,25.303c-0.298,0.321-0.608,0.631-0.929,0.929c-7.785,7.241-19.839,7.241-27.624,0l-32.232-30.6
+                    c-7.244-6.731-7.66-18.059-0.929-25.303C242.568,352.186,242.877,351.876,243.198,351.578z"></path>
+                                                <path style="fill:#DFB28B;"
+                                                    d="M230.63,422.69L118.894,318.962l-46.896-46.896l112-112L349.35,321.25L230.63,422.69z">
+                                                </path>
+                                            </g>
+                                            <g>
+                                                <path style="fill:#E6E6E6;" d="M286.294,158.362l9.6,9.6l104.664,104.664l15.44,15.44l56-56L342.294,102.362L286.294,158.362z
+                     M415.998,224.066c4.418,0,8,3.582,8,8s-3.582,8-8,8s-8-3.582-8-8S411.58,224.066,415.998,224.066z">
+                                                </path>
+<path style="fill:#E6E6E6;" d="M193.702,150.362l-56-56L7.998,224.066l56,56l8-8l112-112L193.702,150.362z M63.998,232.066
+                    c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S68.417,232.066,63.998,232.066z"></path>
+                                            </g>
+                                            <g>
+                                                <path style="fill:#ECC19C;" d="M267.894,194.578c-2.973,2.824-6.916,4.399-11.016,4.4h-32.8c-4.099-0.001-8.042,1.571-11.016,4.392
+                    l-31.2,29.6c-5.121,4.777-5.4,12.801-0.623,17.921c0.2,0.215,0.408,0.422,0.623,0.623c5.506,5.12,14.03,5.12,19.536,0l36-21.208
+                    c6.251-3.682,14.197-2.697,19.36,2.4l92.592,88.544l51.2-48.624L295.926,167.994L267.894,194.578z">
+                                                </path>
+                                                <path style="fill:#ECC19C;" d="M250.278,377.81c-7.785-7.241-19.839-7.241-27.624,0l-32.256,30.6
+                    c-7.242,6.727-7.659,18.05-0.932,25.292c0.299,0.322,0.61,0.633,0.932,0.932c7.785,7.241,19.839,7.241,27.624,0l0.8-0.752
+                    l31.44-29.848c7.246-6.722,7.67-18.045,0.948-25.291C250.911,378.42,250.6,378.109,250.278,377.81z">
+                                                </path>
+                                                <path style="fill:#ECC19C;"
+                                                    d="M167.406,299.13c-7.782-7.249-19.842-7.249-27.624,0l-32.232,30.592
+                    c-7.244,6.731-7.66,18.059-0.929,25.303c0.298,0.321,0.608,0.631,0.929,0.929c7.785,7.241,19.839,7.241,27.624,0l32.232-30.6
+                    c7.242-6.727,7.659-18.05,0.932-25.292C168.039,299.74,167.728,299.429,167.406,299.13L167.406,299.13z"></path>
+                                                <path style="fill:#ECC19C;"
+                                                    d="M195.03,325.354c-7.785-7.241-19.839-7.241-27.624,0l-32.208,30.6
+                    c-7.242,6.727-7.659,18.05-0.932,25.292c0.299,0.322,0.61,0.633,0.932,0.932c7.785,7.241,19.839,7.241,27.624,0l32.232-30.6
+                    c7.235-6.733,7.643-18.057,0.909-25.292C195.664,325.963,195.353,325.653,195.03,325.354L195.03,325.354z"></path>
+                                                <path style="fill:#ECC19C;" d="M222.654,351.578c-7.785-7.241-19.839-7.241-27.624,0l-32.232,30.6
+                    c-7.244,6.731-7.66,18.059-0.929,25.303c0.298,0.321,0.608,0.631,0.929,0.929c7.785,7.241,19.839,7.241,27.624,0l32.232-30.6
+                    c7.244-6.731,7.66-18.059,0.929-25.303C223.285,352.186,222.975,351.876,222.654,351.578z"></path>
+                                            </g>
+                                            <path style="fill:#0071BC;" d="M87.998,40.066l49.704,54.296L7.998,224.066">
+                                            </path>
+                                            <path style="fill:#29485A;"
+d="M399.998,40.066l-57.704,62.296l129.704,129.704">
+                                            </path>
+                                            <path d="M353.39,102.154l52.472-56.648c3.062-3.186,2.961-8.25-0.225-11.311c-3.186-3.062-8.25-2.961-11.311,0.225
+                                            c-0.065,0.068-0.129,0.137-0.192,0.207l-57.6,62.192l-55.896,55.888c-3.123,3.124-3.123,8.188,0,11.312l3.808,3.816l-22.048,20.944
+                c-1.489,1.41-3.462,2.195-5.512,2.192h-32.8c-0.844,0.036-1.685,0.116-2.52,0.24l-26.632-30.752l4.44-4.44
+                c3.123-3.124,3.123-8.188,0-11.312l-55.896-55.84l-49.6-54.16c-2.982-3.261-8.043-3.486-11.304-0.504
+                c-3.261,2.982-3.486,8.043-0.504,11.304l44.544,48.656L2.342,218.41c-3.123,3.124-3.123,8.188,0,11.312l56,56
+                c3.124,3.123,8.188,3.123,11.312,0l2.344-2.344l35.432,35.432l-5.384,5.104c-10.447,9.768-10.998,26.155-1.23,36.602
+                c0.396,0.424,0.806,0.834,1.23,1.23c5.231,4.914,12.15,7.632,19.328,7.592h0.112c0.069,7.076,3.029,13.816,8.192,18.656
+                c5.231,4.91,12.146,7.624,19.32,7.584h0.12c0.064,7.073,3.021,13.812,8.184,18.648c5.231,4.91,12.146,7.624,19.32,7.584h0.112
+                c0.067,7.077,3.027,13.818,8.192,18.656c10.897,10.108,27.743,10.108,38.64,0l6.88-6.528l6.464,6.616
+                c5.202,4.868,12.076,7.551,19.2,7.496c15.067,0.027,27.592-11.597,28.688-26.624c7.32-0.118,14.31-3.065,19.504-8.224
+                c5.182-4.853,8.144-11.621,8.192-18.72c7.451-0.031,14.607-2.914,20-8.056c5.149-4.829,8.104-11.55,8.184-18.608h0.208
+                c7.058,0.048,13.865-2.615,19.016-7.44c5.154-4.811,8.085-11.542,8.096-18.592c-0.007-7.21-3.005-14.093-8.28-19.008l-0.168-0.168
+                l40.88-38.816l9.928,9.928c3.124,3.123,8.188,3.123,11.312,0l56-56c3.123-3.124,3.123-8.188,0-11.312L353.39,102.154z
+                 M19.31,224.066l118.4-118.4l44.688,44.696l-118.4,118.392L19.31,224.066z M113.062,350.154c-4.036-3.672-4.331-9.921-0.659-13.957
+                c0.209-0.23,0.429-0.45,0.659-0.659l32.224-30.6c4.68-4.354,11.928-4.354,16.608,0c4.038,3.676,4.332,9.93,0.656,13.968
+                c-0.208,0.229-0.427,0.447-0.656,0.656l-32.232,30.6C124.98,354.504,117.741,354.501,113.062,350.154z M140.686,376.386
+                c-4.038-3.676-4.332-9.93-0.656-13.968c0.208-0.229,0.427-0.447,0.656-0.656l32.224-30.592c4.68-4.354,11.928-4.354,16.608,0
+                c4.036,3.672,4.331,9.921,0.659,13.957c-0.209,0.23-0.429,0.45-0.659,0.659l-32.224,30.6
+                C152.582,380.655,145.399,380.655,140.686,376.386z M168.31,402.61c-4.038-3.676-4.332-9.93-0.656-13.968
+                c0.208-0.229,0.427-0.447,0.656-0.656l32.224-30.6c4.684-4.351,11.932-4.351,16.616,0c4.038,3.689,4.321,9.954,0.632,13.992
+                c-0.201,0.22-0.412,0.431-0.632,0.632l-32.232,30.6C180.238,406.963,172.99,406.963,168.31,402.61z M212.542,428.866
+c-4.677,4.361-11.931,4.361-16.608,0c-4.036-3.672-4.331-9.921-0.659-13.957c0.209-0.23,0.429-0.45,0.659-0.659l32.232-30.616
+                c4.709-4.272,11.891-4.272,16.6,0c4.038,3.676,4.332,9.93,0.656,13.968c-0.208,0.229-0.427,0.447-0.656,0.656L212.542,428.866z
+                M264.814,428.666c-4.593,4.461-11.834,4.673-16.68,0.488l-6.096-6.232l13.744-13.048c1.134-1.102,2.17-2.302,3.096-3.584
+                l7.616,7.616c1.633,1.508,2.544,3.642,2.504,5.864c-0.157,3.398-1.67,6.591-4.2,8.864L264.814,428.666z M348.686,334.386
+                c2.078,1.902,3.272,4.583,3.296,7.4c-0.008,2.665-1.124,5.206-3.08,7.016c-4.668,4.248-11.829,4.154-16.384-0.216l-24.68-23.424
+                c-3.205-3.049-8.275-2.921-11.324,0.284s-2.921,8.275,0.284,11.324l24.672,23.432c2.029,1.888,3.187,4.532,3.2,7.304
+                c-0.086,3.043-1.473,5.903-3.808,7.856c-4.677,4.361-11.931,4.361-16.608,0l-22.608-21.464c-3.205-3.042-8.27-2.909-11.312,0.296
+                c-3.042,3.205-2.909,8.27,0.296,11.312l22.608,21.464c2.03,1.892,3.188,4.538,3.2,7.312c-0.087,3.043-1.473,5.903-3.808,7.856
+                c-3.958,4.235-10.6,4.459-14.835,0.5c-0.08-0.075-0.159-0.151-0.237-0.228l-8-8l-5.904-5.904c-0.557-6.293-3.404-12.162-8-16.496
+                c-5.257-4.938-12.22-7.652-19.432-7.576c-0.064-7.076-3.021-13.817-8.184-18.656c-5.262-4.935-12.226-7.649-19.44-7.576
+                c-0.067-7.074-3.027-13.813-8.192-18.648c-5.26-4.934-12.221-7.647-19.432-7.576c-0.067-7.077-3.027-13.818-8.192-18.656
+                c-10.898-10.104-27.742-10.104-38.64,0l-15.2,14.464l-35.632-35.72l100.264-100.264l23.064,26.664l-30.272,28.752
+                c-8.322,7.816-8.732,20.898-0.916,29.22c0.296,0.315,0.601,0.62,0.916,0.916c8.326,7.743,21.126,8.038,29.8,0.688l35.304-20.8
+                c3.122-1.839,7.09-1.35,9.672,1.192l70.568,69.6c0.394,0.846,0.936,1.616,1.6,2.272l19.024,18.072l5.472,5.392l0.104-0.104
+                L348.686,334.386z M347.998,311.482l-85.6-84.472c-7.748-7.64-19.667-9.111-29.04-3.584l-36,21.2l-1.448,1.096
+                c-2.427,2.165-6.093,2.165-8.52,0c-1.918-1.746-2.056-4.716-0.31-6.634c0.098-0.108,0.202-0.212,0.31-0.31l31.2-29.6
+                c1.481-1.418,3.453-2.209,5.504-2.208h32.8c6.151,0.011,12.07-2.347,16.528-6.584l22.232-21.12l92.904,93.72L347.998,311.482z
+                 M415.998,276.754l-118.4-118.4l44.696-44.688l118.392,118.4L415.998,276.754z"></path>
+                                            <circle cx="63.998" cy="224.066" r="16"></circle>
+                                            <circle cx="415.998" cy="232.066" r="16"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="Section2Number">51</div>
+                                <div class="Section2Text">ĐỐI TÁC</div>
+                            </div>
+                        </a>
+<a href="MenuBanLanhDao.html" style="text-decoration: none;">
+                            <div class="FlexSection2Icon1">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                            xml:space="preserve">
+                                            <path style="fill:#FEC96B;" d="M128.444,419.127H55.556c-25.16,0-45.556,20.396-45.556,45.556V502h164v-37.317
+                C174,439.523,153.604,419.127,128.444,419.127z"></path>
+                                            <path style="fill:#FFDCA0;" d="M128.444,373.571v9.111c0,20.128-16.317,36.444-36.444,36.444l0,0l0,0
+                c-20.128,0-36.444-16.317-36.444-36.444v-9.111c0-20.128,16.317-36.444,36.444-36.444l0,0
+                C112.128,337.127,128.444,353.444,128.444,373.571z"></path>
+                                            <path style="fill:#C0F4F1;" d="M292.444,419.127h-72.889c-25.16,0-45.556,20.396-45.556,45.556V502h164v-37.317
+                C338,439.523,317.604,419.127,292.444,419.127z"></path>
+                                            <g>
+                                                <path style="fill:#FFDCA0;" d="M292.444,373.571v9.111c0,20.128-16.317,36.444-36.444,36.444l0,0l0,0
+                    c-20.128,0-36.444-16.317-36.444-36.444v-9.111c0-20.128,16.317-36.444,36.444-36.444l0,0
+                    C276.128,337.127,292.444,353.444,292.444,373.571z"></path>
+                                                <path style="fill:#FFDCA0;" d="M456.444,373.571v9.111c0,20.128-16.317,36.444-36.444,36.444l0,0l0,0
+                    c-20.128,0-36.444-16.317-36.444-36.444v-9.111c0-20.128,16.317-36.444,36.444-36.444l0,0
+                    C440.128,337.127,456.444,353.444,456.444,373.571z"></path>
+                                            </g>
+                                            <path style="fill:#C1EE92;" d="M456.444,419.127h-72.889c-25.16,0-45.556,20.396-45.556,45.556V502h164v-37.317
+                C502,439.523,481.604,419.127,456.444,419.127z"></path>
+                                            <path style="fill:#FF5D5D;" d="M304.576,142.03h-97.153c-35.346,0-64,28.654-64,64V236h225.153v-29.97
+                C368.576,170.684,339.923,142.03,304.576,142.03z"></path>
+<path style="fill:#FEC96B;" d="M256,10L256,10c-27.357,0-49.534,22.177-49.534,49.534v11.924h24.219
+                c16.099,0,31.372-7.128,41.712-19.468l0,0l33.136,19.468V59.534C305.534,32.177,283.357,10,256,10z">
+                                            </path>
+                                            <path style="fill:#FFDCA0;" d="M261.728,61.724c-9.024,6.268-19.83,9.734-31.043,9.734h-24.219v21.039
+                c0,27.357,22.177,49.534,49.534,49.534l0,0c27.357,0,49.534-22.177,49.534-49.534V71.458l-16.568-9.734l-16.568-9.734
+                L261.728,61.724z"></path>
+                                            <path d="M458.119,409.169c5.24-7.519,8.325-16.647,8.325-26.487v-9.111c0-25.609-20.835-46.444-46.444-46.444
+                s-46.444,20.835-46.444,46.444v9.111c0,9.84,3.085,18.968,8.325,26.487c-18.147,0.541-34.13,9.819-43.881,23.772
+                c-9.751-13.953-25.733-23.23-43.881-23.772c5.24-7.519,8.325-16.647,8.325-26.487v-9.111c0-25.609-20.835-46.444-46.444-46.444
+                s-46.444,20.835-46.444,46.444v9.111c0,9.84,3.085,18.968,8.325,26.487c-18.147,0.541-34.13,9.819-43.881,23.772
+                c-9.751-13.953-25.733-23.23-43.881-23.772c5.24-7.519,8.325-16.647,8.325-26.487v-9.111c0-25.609-20.835-46.444-46.444-46.444
+                s-46.444,20.835-46.444,46.444v9.111c0,9.84,3.085,18.968,8.325,26.487C24.021,410.06,0,434.61,0,464.683V502
+                c0,5.522,4.478,10,10,10h164h164h164c5.522,0,10-4.478,10-10v-37.317C512,434.61,487.979,410.06,458.119,409.169z M393.556,373.571
+                c0-14.581,11.863-26.444,26.444-26.444s26.444,11.863,26.444,26.444v9.111c0,14.581-11.863,26.444-26.444,26.444
+                s-26.444-11.863-26.444-26.444V373.571z M229.556,373.571c0-14.581,11.863-26.444,26.444-26.444s26.444,11.863,26.444,26.444v9.111
+                c0,14.581-11.863,26.444-26.444,26.444s-26.444-11.863-26.444-26.444V373.571z M65.556,373.571
+                c0-14.581,11.863-26.444,26.444-26.444s26.444,11.863,26.444,26.444v9.111c0,14.581-11.863,26.444-26.444,26.444
+                s-26.444-11.863-26.444-26.444V373.571z M20,464.683c0-19.605,15.95-35.556,35.556-35.556H82v39.959c0,5.522,4.478,10,10,10
+                s10-4.478,10-10v-39.959h26.444c19.605,0,35.556,15.95,35.556,35.556V492H20V464.683z M184,464.683
+                c0-19.605,15.95-35.556,35.556-35.556h26.571v39.959c0,5.522,4.478,10,10,10c5.522,0,10-4.478,10-10v-39.959h26.317
+                c19.605,0,35.556,15.95,35.556,35.556V492H184V464.683z M492,492H348v-27.317c0-19.605,15.95-35.556,35.556-35.556h26.698v39.959
+                c0,5.522,4.478,10,10,10s10-4.478,10-10v-39.959h26.19c19.605,0,35.556,15.95,35.556,35.556V492z"></path>
+                                            <path
+                                                d="M263.069,208.07c1.86-1.86,2.931-4.44,2.931-7.07s-1.07-5.21-2.931-7.07C261.21,192.07,258.63,191,256,191
+s-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07s1.069,5.21,2.93,7.07S253.37,211,256,211S261.21,209.93,263.069,208.07z">
+                                            </path>
+                                            <path d="M92,313.063c5.522,0,10-4.478,10-10V290h144v13.063c0,5.522,4.478,10,10,10s10-4.478,10-10V290h34.076
+                                            c5.522,0,10-4.478,10-10s-4.478-10-10-10H266v-24h102.576c5.522,0,10-4.477,10-10v-29.97c0-40.804-33.196-74-74-74h-4.116
+                c9.367-10.522,15.073-24.371,15.073-39.534V61.724v-2.19C315.533,26.707,288.827,0,256,0s-59.533,26.707-59.533,59.534v32.963
+                c0,15.162,5.706,29.011,15.073,39.534h-4.116c-40.804,0-74,33.196-74,74V236c0,5.523,4.478,10,10,10H246v24H92
+                c-5.522,0-10,4.478-10,10v23.063C82,308.586,86.478,313.063,92,313.063z M216.467,59.534C216.467,37.735,234.201,20,256,20
+                c19.829,0,36.296,14.675,39.109,33.735l-17.646-10.367c-4.211-2.474-9.593-1.544-12.73,2.199
+                c-8.462,10.099-20.871,15.89-34.047,15.89h-14.219L216.467,59.534L216.467,59.534z M216.467,92.497V81.458h14.219
+                c16.225,0,31.648-6.056,43.447-16.85l21.4,12.573v15.316c0,21.799-17.734,39.534-39.533,39.534S216.467,114.295,216.467,92.497z
+                 M153.424,206.03c0-29.776,24.225-54,54-54H246V163c0,5.523,4.478,10,10,10s10-4.477,10-10v-10.97h38.576c29.775,0,54,24.224,54,54
+                V226H153.424V206.03z"></path>
+                                            <path d="M329.01,272.93c-1.87,1.86-2.93,4.44-2.93,7.07s1.06,5.21,2.93,7.069c1.86,1.86,4.43,2.931,7.06,2.931
+                c2.641,0,5.211-1.07,7.08-2.931c1.86-1.859,2.931-4.439,2.931-7.069s-1.07-5.21-2.931-7.07c-1.859-1.86-4.439-2.93-7.08-2.93
+                C333.439,270,330.859,271.069,329.01,272.93z"></path>
+                                            <path d="M358.576,280c0,5.522,4.478,10,10,10h41.678v13.063c0,5.522,4.478,10,10,10s10-4.478,10-10V280c0-5.522-4.478-10-10-10
+                h-51.678C363.054,270,358.576,274.478,358.576,280z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="Section2Number">150</div>
+                                <div class="Section2Text">HỆ THỐNG NHÂN VIÊN</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div style="margin: 0 150px 0 150px;">
+                <div class="Section3Title">ĐĂNG KÍ CỘNG TÁC BÁN HÀNG CÙNG ACTECH MIỀN TRUNG</div>
+                <hr style="background-color: white; width: 200px; height: 1.5px;">
+                <div>
+                    Đến với Actech để nhận chính sách khủng. Được “ứng trước” 20-25% hoa hồng sau khi
+khách hàng ký HD. Mức hoa hồng hưởng từ 50% – 60%. Được tư vấn & hỗ trợ kiến thức
+                    maketing trong suốt quá trình làm việc
+                </div>
+                <div class="Section3Grid">
+                    <div><input style="width: 225px;" type="text" class="Section3txtEmail" placeholder="Họ tên*"></div>
+                    <div><input type="text" class="Section3txtEmail" placeholder="Nhập Email (nếu có)"></div>
+                    <div><input type="text" class="Section3txtEmail" placeholder="Nhập số điện thoại*"></div>
+                    <select class="Section3txtEmail" style="margin-left: 7px;">
+                        <option value="congtacvien">Cộng tác viên</option>
+                        <option value="khachhang">Khách hàng</option>
+                    </select>
+                    <div><button type="button" id="Section3btnDangky" class="btn btn-warning">ĐĂNG KÝ</button></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="Section4DuAn">
+                <div class="Section4Title">DỰ ÁN BẤT ĐỘNG SẢN</div>
+                <div class="div-line"> <!--Đường kẻ dưới chân chữ "Dự án BĐS"-->
+                    <canvas width="80" height="0" style="border:1px solid #000000; margin:3px"></canvas>
+                    <canvas width="12" height="12"
+                        style="border:1px solid #eb622b;border-radius:15px;margin:3px;"></canvas>
+                    <canvas width="80" height="0" style="border:1px solid #000000;margin:3px;"></canvas>
+                </div>
+                <div class="Section4Row">
+                    <div class="Section4Column">
+                        <a href="#"><img src="/Images/dự án hòa bình green.jpg" alt="Hoabinh"
+                                style="width:100%; height: 250px;"></a>
+                        <div style="text-align: center; color: #253d52;"><b>Hòa Bình Green Đà Nẵng</b></div>
+                    </div>
+                    <div class="Section4Column">
+                        <a href="#"><img src="/Images/dự án toàn-cảnh-golden-sea-hội-an-1-768x432.jpg" alt="Hoian"
+                                style="width:100%; height: 250px;"></a>
+                        <div style="text-align: center; color: #253d52;"><b>Hội An Golden Sea</b></div>
+                    </div>
+                    <div class="Section4Column">
+                        <a href="#"><img src="/Images/dự án homeland.jpg" alt="Paradise"
+                                style="width:100%; height: 250px;"></a>
+                        <div style="text-align: center; color: #253d52;"><b>Homeland Paradise Village</b></div>
+                    </div>
+                </div>
+                <a href="MenuDuAn.html"
+                    style="margin-bottom: 70px; display: flex; justify-content: center; text-decoration: none;"><button
+type="button" id="btnSection2" class="btn btn-outline-warning">XEM TOÀN BỘ</button></a>
+
+                <div class="Section4Title">TIN TỨC</div>
+                <div class="div-line" style="margin-bottom: 30px;"> <!--Đường kẻ dưới chân chữ "Dự án BĐS"-->
+                    <canvas width="80" height="0" style="border:1px solid #000000; margin:3px"></canvas>
+                    <canvas width="12" height="12"
+                        style="border:1px solid #eb622b;border-radius:15px;margin:3px;"></canvas>
+                    <canvas width="80" height="0" style="border:1px solid #000000;margin:3px;"></canvas>
+                </div>
+                <div style="display: grid; grid-template-columns: auto auto auto;">
+                    <div class="div-img">
+                        <a class="a-img" href="VanHoa.html">
+                            <figure>
+                                <img style="width: 350px; height: 200px;" alt="" src="/Images/Tin tức Văn hóa doanh nghiệp.jpg">
+                                <figcaption>
+                                    <strong>Bất động sản và câu chuyện xây dựng văn hóa doanh nghiệp thời 4.0</strong>
+                                    <div class="div-content"></div>
+                                    <div class="div-text">(ĐTCK) "Bão" cách mạng công nghiệp 4.0 đang tạo ra những mô
+                                        thức kinh doanh mới...</div>
+                                </figcaption>
+                            </figure>
+                            <div class="div-box">
+                                <b class="div-date">29</b>
+                                <div class="div-month">th4</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="div-img">
+                        <a class="a-img" href="VanHoa.html">
+                            <figure>
+                                <img style="width: 350px; height: 200px;" alt="" src="/Images/Tin tức Chuyên viên kd BĐS.jpg">
+                                <figcaption>
+                                    <strong>Chuyên Viên Kd Bất Động Sản Từ 50 Triệu Đào Tạo Chuyên Nghiệp Từ Gốc /
+                                        Có...</strong>
+                                    <div class="div-content"></div>
+                                    <div class="div-text">Với quá trình được đào tạo miễn phí, cầm tay chỉ việc bởi
+                                        chính những...</div>
+                                </figcaption>
+                            </figure>
+                            <div class="div-box">
+                                <b class="div-date">29</b>
+                                <div class="div-month">th4</div>
+                            </div>
+                        </a>
+                    </div>
+<div class="div-img">
+                        <a class="a-img" href="VanHoa.html">
+                            <figure>
+                                <img style="width: 350px; height: 200px;" alt="" src="/Images/Tin tức FPT City.jpg">
+                                <figcaption>
+                                    <strong>Tại sao FPT City lại hấp dẫn nhà đầu tư đến vậy?</strong>
+                                    <div class="div-content"></div>
+                                    <div class="div-text">Đà Nẵng đang là thị trường ưa chuộng của những nhà đầu tư địa
+                                        ốc...</div>
+                                </figcaption>
+                            </figure>
+                            <div class="div-box">
+                                <b class="div-date">29</b>
+                                <div class="div-month">th4</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Section4Title" style="margin-top: 50px;">ĐỐI TÁC ĐỒNG HÀNH</div>
+                <div class="div-line" style="margin-bottom: 30px;"> <!--Đường kẻ dưới chân chữ "Dự án BĐS"-->
+                    <canvas width="80" height="0" style="border:1px solid #000000; margin:3px"></canvas>
+                    <canvas width="12" height="12"
+                        style="border:1px solid #eb622b;border-radius:15px;margin:3px;"></canvas>
+                    <canvas width="80" height="0" style="border:1px solid #000000;margin:3px;"></canvas>
+                </div>
+                <div class="Section4Logo">
+                    <img src="/Images/Logo-CenLand-Khai-Sơn.png">
+                    <img src="/Images/Logo-dat-xanh-group-gem-riverside.png">
+                    <img src="/Images/home.png">
+                    <img src="/Images/thai-thien-phu.png">
+                    <img src="/Images/vinhoumes.png">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="FooterBackground"> <!--Div tổng của Footer-->
+            <div class="flex-container"> <!--Flex tổng chia ra 3 cột-->
+                <div class="flex-grow"> <!--Flex cột 1-->
+                    <a href="Index.html#"><img class="LogoFooter" src="/Images/transparent-logo.png"></a>
+                </div>
+                <div class="flex-grow"> <!--Flex cột 2-->
+                    <div class="TitleFooter">CÔNG TY BẤT ĐỘNG SẢN ACTECH</div>
+                    <div class="ContentFooter"><i class="fas fa-map-marker-alt"></i> Địa chỉ: Tầng 5 , tòa nhà Bạch Đằng
+                        , 51 Xô Viết Nghệ Tĩnh , Hải Châu , Đà Nẵng</div>
+                    <div class="ContentFooter"><i class="fas fa-phone"></i> Điện thoại: 0905 692 314</div>
+<div class="ContentFooter"><i class="fas fa-envelope"></i> Email: sagovn.net@gmail.com</div>
+                </div>
+                <div class="flex-grow"> <!--Flex cột 3-->
+                    <div class="TitleFooter">ĐĂNG KÝ BẢNG TIN</div>
+                    <div style="margin: 0 0 20px 10px;">
+                        <input type="text" id="txtEmail" placeholder="Nhập Email*">
+                        <button type="button" id="btnDangky" class="btn btn-warning">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="ContentFooter">Kết nối với chúng tôi</div>
+                    <div>
+                        <a href="#"><img class="btnFBTelYTB" src="Images/fb.png"></a>
+                        <a href="#"><img class="btnFBTelYTB" src="Images/phone.png"></a>
+                        <a href="#"><img class="btnFBTelYTB" src="Images/youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="Copyright">Copyright &#169; 2023 <b>thuộc về Công ty Bất Động Sản ACTECH</b></div>
+        </div>
+        <div class="grid-container"> <!--Thanh Footer cuối cùng, vị trí cố định dưới cùng-->
+            <div class="Grid1">Trần Văn Thịnh & Trần Xuân Toản 's Web Project</div>
+            <a href="#" class="Grid2">Hotline: 09044556901</a>
+            <div class="Grid3">Thiết kế web chuyên nghiệp hàng đầu Việt Nam</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

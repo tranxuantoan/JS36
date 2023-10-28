@@ -1,0 +1,329 @@
+/*Header*/
+.LogoHeader{width: 150px; height: 70px; padding-top: 10px; margin-right: 150px;}
+
+.LogoHeader:hover{opacity: 0.8;}
+
+.material-icons{ color: white;}/*CSS Icon tìm kiếm trên Menu*/   
+
+.openBtn {border: none; padding: 10px 15px; font-size: 20px; cursor: pointer;} /*CSS Icon tìm kiếm trên Menu*/          
+
+.openBtn:hover {opacity: 0.8;} /*Rê chuột vào nút Button*/
+    
+.overlay {height: 100%; width: 100%; display: none; position: fixed; z-index: 1; background-color: rgb(0,0,0); background-color: rgba(0,0,0, 0.9); opacity: 0.9;}
+    /*Layout cửa sổ tìm kiếm sau khi Click nút Button*/
+    /*Cố định vị trí*/
+    /*Thứ tự chồng Layout*/
+     /*Độ mờ Layout*/
+      
+.overlay-content {position: relative; top: 46%; width: 50%; text-align: center; margin-top: 30px; margin: auto;}    
+    /*CSS của Input & Button tìm kiếm ở cửa sổ tìm kiếm*/  
+
+.overlay .closebtn {position: absolute; top: 20px; right: 45px; font-size: 60px; cursor: pointer; color: white;}     
+    /*CSS của nút tắt cửa sổ tìm kiếm*/   
+.overlay .closebtn:hover {opacity: 0.8;}
+
+.overlay input[type=text] {padding: 15px; font-size: 17px; border: none; float: left; width: 80%; background: white;}
+    /*CSS của Input & Button tìm kiếm ở cửa sổ tìm kiếm*/
+
+.overlay input[type=text]:hover {background: #f1f1f1;}
+
+.overlay button {float: left; width: 10%; height: 56px; background: #eb622b; font-size: 25px; border: none; color: white;}
+    /*CSS Button trong cửa sổ tìm kiếm*/
+
+.overlay button:hover {opacity: 0.8;}
+
+.HeaderMenu{ /*CSS Menu tổng*/
+    background-image: url(/Images/bg1.jpg);
+    width: 100%;z-index: 2; height: 80px; border-bottom: 2px solid salmon; display: flex; justify-content: center; align-items: center; position: fixed;}
+
+.MenuDropdown{ 
+    display: inline-block; color: white; padding: 0 10px 0 10px; font-size: 9pt; font-weight: bold; margin-right: 20px;}
+    /*CSS của các Dropdown*/
+
+.IconDropdown{width: 10px; height: 7px; margin-bottom: 4px;}
+
+.MenuDropdownContent{display: none; position: absolute; background-color: #f9f9f9; width: 200px; padding: 12px 16px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); color: gray; font-weight: 200; font-size: 11pt;}
+    /*CSS của Item bên trong Dropdown*/
+
+.ItemDropdown:hover{color: gray;}
+
+.MenuDropdown:hover .MenuDropdownContent{display: block;}
+
+.ItemDropdown{color: black;}
+
+
+/*Footer*/
+.FooterBackground{background-image: url("/Images/bg1.jpg"); width: 100%; height: auto;}
+    /*CSS của Footer tổng*/
+
+.flex-container {display: flex; justify-content: center;}
+    /*Chia 3 cột bằng Flex*/
+
+.flex-grow {width: 30%; height: auto; margin: 20px; display: inline-block; align-items: center; color: white;}
+    /*CSS của 3 cột Flex*/
+
+.LogoFooter{width: 250px; height: 137px; margin: 30px 0 0 80px;}
+
+.LogoFooter:hover{opacity: 0.8;}
+
+.TitleFooter{font-size: 15pt; font-weight: bold; margin: 20px 0 10px 0;}
+
+.ContentFooter{font-size: 13pt; margin-bottom: 10px;}
+#txtEmail{border-radius: 7px; height: 45px; width: 250px; border: none;}
+
+#btnDangky{ color: white; font-weight: bold; height: 40px; background-color: #eb622b; border: none; margin-left: 20px; margin-bottom: 3px;}
+
+#btnDangky:hover{opacity: 0.8;}
+
+.btnFBTelYTB{width: 30px; height: 30px; margin-left: 10px;}
+
+.btnFBTelYTB:hover{ opacity: 0.8; border-radius: 14px;}
+
+.grid-container {display: grid; grid-template-columns: auto auto auto auto auto auto auto auto; background-color: #3498db; text-align: center; color: white; height: auto; position: fixed; width: 100%; left: 0; bottom: 0; }
+    /*Chia thanh cuối cùng bằng Grid*/
+    /*Chia thanh cuối cùng ra 8 cột*/
+
+.Grid1 {width: 100%; grid-column: span 3;}
+    /*Grid 3 cột*/
+
+.Grid2 {border-left: 1px solid white; border-right: 1px solid white; width: 100%; grid-column: span 2; color: white;}
+    /*Grid 2 cột*/
+
+.Grid3 {width: 100%; grid-column: span 3;}
+    /*Grid 3 cột*/
+
+.Copyright{margin-bottom: 20px; color: white; text-align: center; border-top: 1px solid white;}
+
+/*Slide Images Section1*/
+* {box-sizing: border-box}
+.section1 {margin:0;}
+.mySlides {display: none; position: relative; text-align: center;}
+.imgSlide {vertical-align: middle; height: 400px;}
+
+.TitleSlideCenter {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25pt;
+    font-weight: bold;
+    background-color: #334862;
+    color: #f2f2f2;
+    padding: 10px;
+}
+.XemThemSlideCenter{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13pt;
+    font-weight: bold;
+    background-color: #334862;
+    color: #f2f2f2;
+    padding: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+.TitleSlideCenter:hover, .XemThemSlideCenter:hover{
+    color: white;
+    text-decoration: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+background-color: #717171;
+border-radius: 50px;
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black;
+  border-radius: 50px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+#fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*Section 2*/
+.GridSection2{
+display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
+    margin: 30px 100px 70px 100px;
+}
+.GridSection2Item1{
+    color: black;
+    width: 575px;
+    padding-right: 20px;
+}
+.GridSection2Item2{
+    color: black;
+    width: 575px;
+}
+.Section2Title1{
+    color:#153660;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.Section2Title2{
+    color: black;
+}
+.Section2Title2:hover{
+    color: #eb622b;
+    text-decoration: none;
+}
+#btnSection2{
+    color: #eb622b;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+#btnSection2:hover{
+    color: white;
+    background-color: #eb622b;
+}
+.GridSection2Icon{
+    color: black;
+    grid-column: span 2;
+    margin-top: 80px;
+}
+.FlexSection2Icon-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap: 100px
+}
+.FlexSection2Icon1{
+    width: 200px;
+}
+.Section2Number{
+    color: #eb622b;
+    font-size: 19pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+.Section2Text{
+    text-align: center;
+    color: black;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 65px;
+}
+.FlexSection2Icon1:hover .Section2Text{
+    color: #eb622b;
+}
+
+/*Section3*/
+.section3{
+    background-image: url(/Images/bg1.jpg);
+    height: 280px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+.Section3Title{
+    font-size: 14pt;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.Section3Grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding-top: 40px;
+}
+
+#Section3btnDangky{
+    color: white; font-weight: bold; width: 225px; height: 40px; background-color: #eb622b; border: none;
+}
+#Section3btnDangky:hover{opacity: 0.8;}
+.Section3txtEmail{
+    border-radius: 7px; height: 40px; border: none; width: 170px;
+}
+
+/*Section 4*/
+.Section4DuAn{
+    margin: 30px 100px 30px 100px;
+}
+.Section4Title{
+    text-align: center;
+    color: #253d52;
+    font-size: 150%;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.div-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 10px;
+}
+.Section4Row{
+    display: flex;
+    margin-bottom: 20px;
+}
+.Section4Column{
+    flex: 33.33%;
+    padding: 5px;
+}
+.Section4Logo{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.Section4Logo img{
+    width: 190px;
+    height: 80px;
+}

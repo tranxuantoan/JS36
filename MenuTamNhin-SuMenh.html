@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ACTECH LAND - Công ty Bất Động Sản tại Đà Nẵng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="MenuVanHoa.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-image: url(/Images/bg2.jpg); background-repeat: repeat;">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openSearch() { /*Hành động mở Layout Tìm kiếm*/
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() { /*Hành động tắt Layout Tìm kiếm*/
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <style>
+        .vision{
+            padding-top: 100px;
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        .img3{
+            padding-top: 30px;
+            padding-left: 100px;
+            padding-bottom: 20px;
+        }
+    </style>
+
+    <header>
+        <div class="HeaderMenu"> <!--Div tổng của Header-->
+            <div class="MenuBar"> <!--Div của riêng thanh Menu-->
+                <a href="Index.html#"><img class="LogoHeader" src="/Images/transparent-logo.png"></a>
+                <!--Logo bên phải-->
+                <a href="MenuGioiThieuChung.html" style="color: white; text-decoration: none;"> <!--Các Item của Menu-->
+                    <div class="MenuDropdown">VỀ CHÚNG TÔI <i class="fa fa-angle-down" style="font-size:14px"></i>
+                        <div class="MenuDropdownContent">
+                            <a href="MenuGioiThieuChung.html" class="ItemDropdown" style="text-decoration: none;">Giới
+                                thiệu chung</a>
+                            <hr>
+                            <a href="MenuTamNhin-SuMenh.html" class="ItemDropdown" style="text-decoration: none;">Tầm
+                                nhìn - Sứ mệnh</a>
+                            <hr>
+                            <a href="MenuGiaTriCotLoi.html" class="ItemDropdown" style="text-decoration: none;">Giá trị
+                                cốt lõi</a>
+                            <hr>
+                            <a href="MenuBanLanhDao.html" class="ItemDropdown" style="text-decoration: none;">Ban lãnh
+                                đạo</a>
+                            <hr>
+                            <a href="MenuHeThongChiNhanh.html" class="ItemDropdown" style="text-decoration: none;">Hệ
+                                thống chi nhánh</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="MenuDuAn.html" style="color: white; text-decoration: none;"> <!--Các Item của Menu-->
+                    <div class="MenuDropdown">DỰ ÁN <i class="fa fa-angle-down" style="font-size:14px"></i>
+                        <div class="MenuDropdownContent">
+                            <a href="DuAnCanHo.html" class="ItemDropdown" style="text-decoration: none;">Căn hộ</a>
+                            <hr>
+                            <a href="DuAnNhaPho.html" class="ItemDropdown" style="text-decoration: none;">Nhà phố</a>
+                            <hr>
+                            <a href="DuAnDatNen.html" class="ItemDropdown" style="text-decoration: none;">Đất nền</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="MenuVanHoa.html" class="MenuDropdown" style="color: white; text-decoration: none;">VĂN HÓA</a>
+                <!--Các Item của Menu-->
+                <a href="MenuTintuc.html" style="color: white; text-decoration: none;"><!--Các Item của Menu-->
+<div class="MenuDropdown">TIN TỨC <i class="fa fa-angle-down" style="font-size:14px"></i>
+                        <div class="MenuDropdownContent">
+                            <a href="TinTucTinThiTruong.html" class="ItemDropdown" style="text-decoration: none;">Tin
+                                thị trường</a>
+                            <hr>
+                            <a href="TinTucTinVeActech.html" class="ItemDropdown" style="text-decoration: none;">Tin về
+                                Actect</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="MenuTuyenDung.html" class="MenuDropdown" style="color: white; text-decoration: none;">TUYỂN
+                    DỤNG</a> <!--Các Item của Menu-->
+                <a href="MenuLienHe.html" class="MenuDropdown" style="color: white; text-decoration: none;">LIÊN HỆ</a>
+                <!--Các Item của Menu-->
+            </div>
+
+            <a class="openBtn" onclick="openSearch()" href="#"><i class="material-icons">search</i></a>
+            <!--Icon tìm kiếm/Hành động mở cửa sổ tìm kiếm/Phải thêm thư viện ở dòng 10-->
+        </div>
+    </header>
+    <main class="vision">
+        <h3>Tầm nhìn - Sứ mệnh</h3>
+        <p><b style="font-size: 15px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+             software like Aldus PageMaker including versions of Lorem Ipsum.</b></p>
+        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+            the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <img class="img3" src="Images/vision.jpg" alt="Tầm nhìn - Sứ mệnh">
+    </main>
+    <footer>
+        <div class="FooterBackground"> <!--Div tổng của Footer-->
+            <div class="flex-container"> <!--Flex tổng chia ra 3 cột-->
+                <div class="flex-grow"> <!--Flex cột 1-->
+                    <a href="Index.html#"><img class="LogoFooter" src="/Images/transparent-logo.png"></a>
+                </div>
+                <div class="flex-grow"> <!--Flex cột 2-->
+                    <div class="TitleFooter">CÔNG TY BẤT ĐỘNG SẢN ACTECH</div>
+                    <div class="ContentFooter"><i class="fas fa-map-marker-alt"></i> Địa chỉ: Tầng 5 , tòa nhà Bạch Đằng
+                        , 51 Xô Viết Nghệ Tĩnh , Hải Châu , Đà Nẵng</div>
+                    <div class="ContentFooter"><i class="fas fa-phone"></i> Điện thoại: 0905 692 314</div>
+<div class="ContentFooter"><i class="fas fa-envelope"></i> Email: sagovn.net@gmail.com</div>
+                </div>
+                <div class="flex-grow"> <!--Flex cột 3-->
+                    <div class="TitleFooter">ĐĂNG KÝ BẢNG TIN</div>
+                    <div style="margin: 0 0 20px 10px;">
+                        <input type="text" id="txtEmail" placeholder="Nhập Email*">
+                        <button type="button" id="btnDangky" class="btn btn-warning">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="ContentFooter">Kết nối với chúng tôi</div>
+                    <div>
+                        <a href="#"><img class="btnFBTelYTB" src="Images/fb.png"></a>
+                        <a href="#"><img class="btnFBTelYTB" src="Images/phone.png"></a>
+                        <a href="#"><img class="btnFBTelYTB" src="Images/youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="Copyright">Copyright &#169; 2023 <b>thuộc về Công ty Bất Động Sản ACTECH</b></div>
+        </div>
+        <div class="grid-container"> <!--Thanh Footer cuối cùng, vị trí cố định dưới cùng-->
+            <div class="Grid1">Trần Văn Thịnh & Trần Xuân Toản 's Web Project</div>
+            <a href="#" class="Grid2">Hotline: 09044556901</a>
+            <div class="Grid3">Thiết kế web chuyên nghiệp hàng đầu Việt Nam</div>
+        </div>
+    </footer>
+</body>
+
+</html>
