@@ -1,0 +1,25 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+a.nut-dang-ky{
+	    background: #173760;
+    color: white;
+    padding: 10px 20px;
+}
+.product-small .product-title a{
+	    font-weight: bold;
+    color: #253d52;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
